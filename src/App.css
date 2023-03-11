@@ -29,6 +29,9 @@
 
 form {
   display: table;
+  margin-top: 30px;
+  margin-left: 40%;
+  font-size: large;
 }
 p {
   display: table-row;
@@ -40,4 +43,5 @@ label {
 
 input {
   display: table-cell;
+  width: 150%;
 }
