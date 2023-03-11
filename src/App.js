@@ -7,10 +7,8 @@ function App() {
   return (
     // contains global styles / modes
     <div className="App">
-      App
       {/* // contains page positioning with grid and flexbox */}
       <div className="layout" style={{border: "3px solid red"}}>
-          Layout
           <Header />
           <View />
         </div>
