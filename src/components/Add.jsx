@@ -33,7 +33,9 @@ function Add(){
               <label>Age: </label>
               <input type='number' placeholder="Age" min='1' max="110" required/>
           </p>
+          <button className='addButton'>Submit</button>
       </form>
+
   </div>
   )
 }

@@ -25,6 +25,9 @@
 
 .list {
   grid-row: 3 / 3;
+  margin-left: 25%;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 
 form {
@@ -46,6 +49,35 @@ input {
   width: 150%;
 }
 
-.childPerson {
-  justify-content: space-around;
+.list-row {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
 }
+
+.list-row-cell {
+  display: table-row;
+  float: left;
+  text-align: center;
+  border: 3px solid black;
+}
+
+.name {
+  width: 300px;
+}
+
+.address {
+  width: 300px;
+}
+
+.state {
+  width: 65px;
+}
+.zip {
+  width: 100px;
+}
+
+.age {
+  width: 65px;
+}
+
