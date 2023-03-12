@@ -25,7 +25,7 @@
 
 .list {
   grid-row: 3 / 3;
-  margin-left: 25%;
+  margin-left: 15%;
   margin-top: 50px;
   margin-bottom: 100px;
 }
@@ -59,7 +59,7 @@ input {
   display: table-row;
   float: left;
   text-align: center;
-  border: 3px solid black;
+  border: 1px solid black;
 }
 
 .name {
@@ -79,5 +79,20 @@ input {
 
 .age {
   width: 65px;
+}
+
+.listButtons {
+  margin-left: 40%;
+}
+
+.updateButton {
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 150px;
+}
+
+.icon {
+  margin-left: 10px;
+  font-weight: 600;
 }
 
