@@ -45,3 +45,7 @@ input {
   display: table-cell;
   width: 150%;
 }
+
+.childPerson {
+  justify-content: space-around;
+}
