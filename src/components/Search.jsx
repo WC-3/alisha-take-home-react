@@ -1,16 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
+import axios from 'axios'
 
-function Search(){
+function Search({data, setData}){
+
+  const options = ['all', ' id', 'name', 'age']
+
+  const [selected, setSelected] = useState(options[0])
+
   return(
     <div className="search">
-            <select name = 'State' className='search-dropdown' required>
-                    <option key='all'>All</option>
-                    <option key='id'>Id</option>
-                    <option key='name'>Name</option>
-                    <option key='age'>Age</option>
+            <select  className='search-dropdown' value={selected} onChange={e => setSelected(e.target.value)} required>
+              {options.map((value) => (
+                  <option value={value} key={value}>
+                  {value}
+              </option>
+              ))}
             </select>
                 <input type='text' className='searchbar' placeholder='search'/>
-                <button className='addButton'>Search</button>
+                <button className='addButton' onClick={() => console.log(selected)}>Search</button>
   </div>
   )
 }
