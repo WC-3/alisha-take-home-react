@@ -1,5 +1,5 @@
 import React from 'react'
-import { regData } from "../mock-data/data.js"
+import { regData } from "../data/data.js"
 import Row from './Row'
 
 function List(){

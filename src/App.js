@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import Header from './components/Header.jsx'
 import View from './components/View.jsx'
+import axios from 'axios'
 
 function App() {
+
+  useEffect(() => {
+    axios.get('/personnel')
+    .then(res => console.log(res))
+    .catch(err => console.error(err))
+  }, [])
+
   return (
     // contains global styles / modes
     <div className="App">
