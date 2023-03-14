@@ -33,21 +33,40 @@ app.get('/personnel/:age', (req, res) => {
 
 app.delete('/personnel/:id', (req, res) => {
   const id = req.params.id;
-  console.log(`getting /personnel/${id}`)
+  console.log(`deleting /personnel/${id}`)
   res.status(200)
-  res.send(`getting /personnel/${id}`)
+  res.send(`deleting /personnel/${id}`)
 })
 
-app.put('/personnel', (req, res) => {
+app.put('/personnel/:id', (req, res) => {
   const id = req.params.id;
-  console.log(`getting /personnel/${id}`)
+  const body = {
+    //implement id solution
+    id: id,
+    name: req.body.name,
+    address: req.body.address,
+    state: req.body.state,
+    zip: req.body.zip,
+    age: req.body.age
+  }
+  console.table(body);
   res.status(200)
-  res.send(`getting /personnel/${id}`)
+  res.send(`updating /personnel/${id}`)
 })
 
 app.post('/personnel', (req, res) => {
+  const body = {
+    //implement id solution
+    id: 1,
+    name: req.body.name,
+    address: req.body.address,
+    state: req.body.state,
+    zip: req.body.zip,
+    age: req.body.age
+  }
+  console.table(body);
   res.status(200)
-  res.send("POST Request Called")
+  res.send(`posting new personel ${body}`)
 })
 
 
