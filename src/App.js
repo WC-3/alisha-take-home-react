@@ -6,6 +6,8 @@ import axios from 'axios'
 
 function App() {
 
+  const [data, setData] = useState()
+
   useEffect(() => {
     axios.get('/personnel')
     .then(res => console.log(res))
@@ -18,7 +20,7 @@ function App() {
       {/* // contains page positioning with grid and flexbox */}
       <div className="layout" style={{border: "3px solid red"}}>
           <Header />
-          <View />
+          <View data={data} setData={setData}/>
         </div>
     </div>
   );
